@@ -13,6 +13,7 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors());
 // Allow CORS from your Vercel domain
 app.use(cors({
   origin: 'https://cricmoments-frontend.vercel.app', // 🔁 replace with your actual Vercel domain
