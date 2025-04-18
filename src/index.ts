@@ -13,11 +13,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 // Allow CORS from your Vercel domain
 app.use(cors({
-  origin: 'https://cricmoments-production.up.railway.app', // 🔁 replace with your actual Vercel domain
+  origin: 'https://cricmoments-frontend.vercel.app', // 🔁 replace with your actual Vercel domain
 }));
+
+
 const PORT = 3000;
 
 app.use('/api', uploadRouter);
